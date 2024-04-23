@@ -6,6 +6,7 @@ body {
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
+  box-sizing: border-box;
 }
 
 /* Headings */
@@ -19,6 +20,8 @@ h3 {
 /* Header */
 header {
   text-align: center;
+  vertical-align: center;
+  align-items: center;
 }
 
 /* Containers */
@@ -75,4 +78,58 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+.headerGrp {
+  display: flex;
+  flex-direction: row; /* or column */
+  justify-content: center;
+  vertical-align: center;
+
+}
+
+nav {
+  display: flex;
+  flex-direction: row; /* or column */
+  justify-content: space-around;
+}
+
+/* aligning the h3 to the middle of the section*/
+#aboutSection{
+  align-content: center;
+}
+
+/* making the image and text appear one next to the other*/
+.aboutGrp{
+  display: flex;
+  flex-direction: row;
+}
+
+/* making the text paragraphs aooear under the h3, aside the image */
+.aboutTxt{
+  display: flex;
+  flex-direction: column;
+}
+
+/*aligning inside the text*/
+#aboutContent{
+  text-align: left;
+}
+
+/*container aligninng the works in a row*/
+#allWorks{
+  display: flex;
+  flex-direction: row;
+  gap:8px;
+  text-align: center;
+}
+
+/*container aligning the items of each section in a column*/
+#allWorks section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: auto;
+  width: 200px;
+  font-size: 14px;
 }
